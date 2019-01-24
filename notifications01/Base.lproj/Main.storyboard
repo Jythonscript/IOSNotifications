@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +12,44 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="notifications01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="bfU-JE-ukW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtn-0T-Dns">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                                        <state key="normal" title="Button1"/>
+                                        <connections>
+                                            <action selector="button1pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIH-Hd-vAr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV8-ON-Xow">
+                                        <rect key="frame" x="0.0" y="373" width="375" height="274"/>
+                                        <state key="normal" title="Button2"/>
+                                        <connections>
+                                            <action selector="button2pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IC3-z4-Re8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dtn-0T-Dns" firstAttribute="leading" secondItem="bfU-JE-ukW" secondAttribute="leading" id="7Oj-k6-5sl"/>
+                                    <constraint firstItem="yV8-ON-Xow" firstAttribute="leading" secondItem="bfU-JE-ukW" secondAttribute="leading" id="fGT-r1-Ofe"/>
+                                    <constraint firstAttribute="trailing" secondItem="yV8-ON-Xow" secondAttribute="trailing" id="qp6-ZW-6na"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dtn-0T-Dns" secondAttribute="trailing" id="y52-GB-tAB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bfU-JE-ukW" secondAttribute="bottom" id="7fM-f6-ls3"/>
+                            <constraint firstItem="bfU-JE-ukW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bbg-od-bvk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bfU-JE-ukW" secondAttribute="trailing" id="F0D-eY-1s3"/>
+                            <constraint firstItem="bfU-JE-ukW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cBR-y0-TCb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

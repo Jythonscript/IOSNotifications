@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E83AA2F21EFA28500C0407B /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E83AA2E21EFA28500C0407B /* Database.swift */; };
 		3EBEC4052199ED0C00158ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEC4042199ED0C00158ED2 /* AppDelegate.swift */; };
 		3EBEC4072199ED0C00158ED2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEC4062199ED0C00158ED2 /* ViewController.swift */; };
 		3EBEC40A2199ED0C00158ED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEC4082199ED0C00158ED2 /* Main.storyboard */; };
 		3EBEC40C2199ED0F00158ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEC40B2199ED0F00158ED2 /* Assets.xcassets */; };
 		3EBEC40F2199ED0F00158ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEC40D2199ED0F00158ED2 /* LaunchScreen.storyboard */; };
+		3EDFA2DC21BEDAF5008F6820 /* scream.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3EDFA2DB21BEDAF5008F6820 /* scream.aiff */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3EA0E33621C17C9400CF9985 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3E83AA2E21EFA28500C0407B /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3E9202AA219C93BF001B5979 /* notifications01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = notifications01.entitlements; sourceTree = "<group>"; };
+		3EA0E32521C17C9400CF9985 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		3EA0E32721C17C9400CF9985 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		3EBEC4012199ED0C00158ED2 /* notifications01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notifications01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBEC4042199ED0C00158ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EBEC4062199ED0C00158ED2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,7 @@
 		3EBEC40B2199ED0F00158ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EBEC40E2199ED0F00158ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EBEC4102199ED0F00158ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EDFA2DB21BEDAF5008F6820 /* scream.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = scream.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,10 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EA0E32421C17C9400CF9985 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EA0E32521C17C9400CF9985 /* UserNotifications.framework */,
+				3EA0E32721C17C9400CF9985 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3EBEC3F82199ED0C00158ED2 = {
 			isa = PBXGroup;
 			children = (
 				3EBEC4032199ED0C00158ED2 /* notifications01 */,
+				3EA0E32421C17C9400CF9985 /* Frameworks */,
 				3EBEC4022199ED0C00158ED2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,10 +84,13 @@
 		3EBEC4032199ED0C00158ED2 /* notifications01 */ = {
 			isa = PBXGroup;
 			children = (
+				3E9202AA219C93BF001B5979 /* notifications01.entitlements */,
 				3EBEC4042199ED0C00158ED2 /* AppDelegate.swift */,
 				3EBEC4062199ED0C00158ED2 /* ViewController.swift */,
+				3E83AA2E21EFA28500C0407B /* Database.swift */,
 				3EBEC4082199ED0C00158ED2 /* Main.storyboard */,
 				3EBEC40B2199ED0F00158ED2 /* Assets.xcassets */,
+				3EDFA2DB21BEDAF5008F6820 /* scream.aiff */,
 				3EBEC40D2199ED0F00158ED2 /* LaunchScreen.storyboard */,
 				3EBEC4102199ED0F00158ED2 /* Info.plist */,
 			);
@@ -74,6 +107,7 @@
 				3EBEC3FD2199ED0C00158ED2 /* Sources */,
 				3EBEC3FE2199ED0C00158ED2 /* Frameworks */,
 				3EBEC3FF2199ED0C00158ED2 /* Resources */,
+				3EA0E33621C17C9400CF9985 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -96,6 +130,11 @@
 				TargetAttributes = {
 					3EBEC4002199ED0C00158ED2 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +163,7 @@
 			files = (
 				3EBEC40F2199ED0F00158ED2 /* LaunchScreen.storyboard in Resources */,
 				3EBEC40C2199ED0F00158ED2 /* Assets.xcassets in Resources */,
+				3EDFA2DC21BEDAF5008F6820 /* scream.aiff in Resources */,
 				3EBEC40A2199ED0C00158ED2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E83AA2F21EFA28500C0407B /* Database.swift in Sources */,
 				3EBEC4072199ED0C00158ED2 /* ViewController.swift in Sources */,
 				3EBEC4052199ED0C00158ED2 /* AppDelegate.swift in Sources */,
 			);
@@ -282,14 +323,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = notifications01/notifications01.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DRGPG885PD;
+				DEVELOPMENT_TEAM = JBC4329F6N;
 				INFOPLIST_FILE = notifications01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.edenpr.notifications01;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs2018.Tell-Me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,14 +342,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = notifications01/notifications01.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DRGPG885PD;
+				DEVELOPMENT_TEAM = JBC4329F6N;
 				INFOPLIST_FILE = notifications01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.edenpr.notifications01;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs2018.Tell-Me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
